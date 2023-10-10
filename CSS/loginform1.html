@@ -15,8 +15,7 @@
         .main{
             height: 100vh;
             width: 100vw;
-            background-color: #ec88dd;
-            background-image: linear-gradient(135deg,#0687dd 0%,#9ef088 100%);
+            background-image: linear-gradient(135deg,#55aebc 20%,#3cad1d 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,25 +23,90 @@
         }
 
         .box{
-            height: 80%;
-            width: 40%;
-            background-color: whitesmoke;
-            justify-content: space-between;
+            height: 500px;
+            width: 300px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 40px;
+            margin: 40px;
+
+
+        }
         
-        }
-
-        .buttons{
-            width: 80%;
-            background-color: #0687dd;
-            margin: 10%;
+        .top{
+            display: flex;
             justify-content: space-between;
+            width: 100%;
         }
 
-        button{
-            height: 30px;
-            width: 60px;
+        
 
-        }    
+        .top button{
+           background-color: azure; 
+           color: black;
+           height: 40px;
+           width: 140px;
+           border-radius: 5px;
+        }
+
+        .or div{
+            background-color: rgb(221, 221, 221);
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+
+        form{
+            width: 100%;
+            height: 15%;
+
+
+
+        }
+
+        #text{
+            background-color: rgb(237, 236, 236);
+            width: 100%;
+            height: 70%;
+            border: none;
+            border-bottom: 2px solid ;        
+                                                                         
+        }
+       button{
+            width: 100%;
+            height: 10%;
+            border-radius: 10px;
+            background-color: #3cad1d;
+            color: aliceblue;
+        }
+
+        #check{
+            margin-top: 5px;
+            height: 30%;
+        }
+
+        hr{
+            border-bottom: #aaaaaa solid 1px;
+            width: 100%;
+            border-style: solid;
+           
+        }
+
+
+
+
+
+ 
+
 
         
 
@@ -51,20 +115,29 @@
 <body>
     <div class="main">
         <div class="box">
-            <div class="buttons">
-
-                <button>Google</button>
-
-                <button>Facebook</button>
-            
+            <div class="top">
+                <button>google</button>
+                <button>facebook</button>
             </div>
-            <form action="">
-            
+            <div class="or">
+                <div><p>OR</p></div>
+            </div>
+            <form action=""> 
+             <input type="text" name="" id="text">   
 
-
+             <input type="checkbox" id="check"> <label for="">I clearify that im above 18</label>
             </form>
+             <button>Next</button>
+
+             <hr>
+
+             <p>Not a member?</p>
+             <p>Register</p>
+
+
 
         </div>
+        
     </div>
 </body>
-</html>     
+</html> >   
